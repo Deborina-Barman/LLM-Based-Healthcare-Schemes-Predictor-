@@ -26,3 +26,43 @@ The model is fine-tuned using government healthcare information from the followi
 ```bash
 git clone https://github.com/yourusername/llm-healthcare-bot.git
 cd llm-healthcare-bot
+2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+3️⃣ Add API Keys (if required)
+
+    Create a .env file and add your API keys:
+
+API_KEY=your_openai_api_key
+
+4️⃣ Run the Model
+
+from your_model import llm
+
+query = "What Healthcare Schemes are available?"
+response = llm.predict(query)
+print(response)
+📌 Example Query & Response
+Query:
+
+llm.predict("What Healthcare Schemes are available?")
+
+Expected Output:
+
+1️⃣ Ayushman Bharat Yojana (ABY) - Provides financial assistance for hospitalization.  
+2️⃣ Rashtriya Swasthya Bima Yojana (RSBY) - Health insurance for low-income families.  
+3️⃣ National Organ Transplant Programme - Supports organ transplant patients.  
+...
+
+🖥️ Open in Google Colab
+
+To test the model in Google Colab, click below:
+🤝 Contributing
+
+    Feel free to fork the repo and submit pull requests.
+    Raise issues if you find any bugs or improvements.
+
+📜 License
+
+This project is licensed under MIT License.
+
